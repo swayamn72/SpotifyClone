@@ -16,9 +16,9 @@ body{
 }
 .right{
     width: 75vw;
-    
-}
-.home{
+    margin-top: 16px;
+    margin-right: 10px;
+    position: relative;
 }
 .home ul li{
     gap: 15px;
@@ -51,6 +51,7 @@ body{
     gap: 13px;
     position: absolute;
     bottom: 0;
+    padding-bottom: 10px;
 }
 .footer a{
     color: gray;
@@ -61,7 +62,59 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    background-color: rgb(49, 34, 14);
+    
 }
 .header > *{
-    padding: 20px;
+    padding: 20px;    
+}
+.playlist{
+    padding: 16px;
+    max-height: 70vh;
+    overflow: scroll;
+}
+.card{
+    background-color: #252525;
+    width: 200px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    
+}
+.play{
+    position: absolute;
+    bottom: 105px;
+    right: 20px;
+    opacity: 1;
+}
+.card > *{
+    padding-top: 10px;
+}
+.cardContainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.play img{
+    width: 28px;
+}
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: #a6f7b0;
+    width: 100%;
+    padding: 12px;
+    
+}
+.songButtons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.songButtons > *{
+    width: 25px;
 }
