@@ -103,9 +103,9 @@ body{
     width: 28px;
 }
 .playbar{
-    position: absolute;
+    position: sticky;
     bottom: 0;
-    background-color: #a6f7b0;
+    background-color: #819183;
     width: 100%;
     padding: 12px;
     
@@ -117,4 +117,30 @@ body{
 }
 .songButtons > *{
     width: 25px;
+}
+.buttons > *{
+    gap: 150px;
+}
+.loginBtn{
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.signUpBtn{
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+}
+.loginBtn:hover{
+    cursor: pointer;
+    font-size: 17px;
+}
+.signUpBtn:hover{
+    cursor: pointer;
+    font-size: 17px;
 }

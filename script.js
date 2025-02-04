@@ -1,28 +1,57 @@
 async function getSongs() {
-    let a = await fetch("http://127.0.0.1:5500/Songs/")
-    let response = await a.text()
+    
+    let a = await fetch("http://127.0.0.1:5500/songs")
 
-    let div = document.createElement("div")
-    div.innerHTML = response
-    let as = div.getElementsByTagName("a")
+    
+    let response = await a.text();
 
-    let songsArray = []
+    
+    let div = document.createElement("div");
+    div.innerHTML = response;
 
-    for(let i=0; i<as.length; i++){
+    
+    let as = div.getElementsByTagName("a");
+
+    
+    let songsArray = [];
+
+    
+    for (let i = 0; i < as.length; i++) {
         const elmt = as[i];
-        if(elmt.href.endsWith(".mp3")){
-            songsArray.push(elmt.href)
+        if (elmt.href.endsWith(".mp3")) {
+            songsArray.push(elmt.href);  
         }
     }
-    return songsArray
+
+    return songsArray;  
 }
 
-async function main(){
-    let gaana = await getSongs()
-    console.log(gaana)
+async function main() {
+    
+    let gaana = await getSongs();
+    console.log(gaana); 
 
-    var audio = new Audio(gaana[0]);
-    audio.play();
+    
+    let container = document.querySelector(".library");
+
+    
+    let ul = document.createElement("ul");
+
+    
+    for (let song of gaana) {
+        
+        let li = document.createElement("li");
+
+        
+        li.textContent = song.substr(28).replaceAll("%20", " ").replaceAll(".mp3", " ");  
+
+        
+        ul.appendChild(li);
+    }
+
+    
+    container.appendChild(ul);
 }
 
-main()
+
+main();
