@@ -44,8 +44,6 @@ async function main() {
 
         
         li.textContent = song.substr(28).replaceAll("%20", " ").replaceAll(".mp3", " ");  
-
-        
         ul.appendChild(li);
     }
 

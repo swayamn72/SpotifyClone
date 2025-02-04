@@ -136,11 +136,13 @@ body{
     height: 30px;
     font-size: 16px;
 }
-.loginBtn:hover{
+.loginBtn:hover .loginDiv{
     cursor: pointer;
-    font-size: 17px;
+    transform: scale(1.03);
+    
 }
-.signUpBtn:hover{
+.signUpBtn:hover .signUpDiv{
     cursor: pointer;
-    font-size: 17px;
+    transform: scale(1.03);
+    
 }
