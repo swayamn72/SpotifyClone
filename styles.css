@@ -105,8 +105,8 @@ body{
 .playbar{
     position: absolute;
     bottom: 0;
-    background-color: #a6f7b0;
-    width: 100%;
+    background-color: #d6fcda;
+    width: 90%;
     padding: 12px;
     
 }
