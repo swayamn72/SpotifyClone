@@ -49,3 +49,6 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #19a447; /* Slightly darker green on hover */
 }
+.size25{
+    width: 25px;
+}

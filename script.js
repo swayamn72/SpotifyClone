@@ -32,23 +32,26 @@ async function main() {
     console.log(gaana); 
 
     
-    let container = document.querySelector(".library");
-
-    
-    let ul = document.createElement("ul");
-
-    
-    for (let song of gaana) {
-        
-        let li = document.createElement("li");
+    let songUl = document.querySelector(".songList").getElementsByTagName("ul")[0];
 
         
-        li.textContent = song.substr(28).replaceAll("%20", " ").replaceAll(".mp3", " ");  
-        ul.appendChild(li);
-    }
+        for (const s of gaana) {
+            songUl.innerHTML += `<li> 
+            
+                            <img class="invert songListImg" src="music.svg" alt="">
+                            <div class="info">
+                                <div>${s.substr(28).replaceAll("%20"," ").replaceAll(".mp3", "")}</div>
+                                <div>CAS</div>
 
-    
-    container.appendChild(ul);
+                            </div>
+                            <div class="playNow">
+                                <span>Play now</span>
+                                <img class="invert size25" src="playPlaybar.svg" alt="">
+                            </div>
+                            
+                        
+            </li>`;
+        }
 }
 
 
