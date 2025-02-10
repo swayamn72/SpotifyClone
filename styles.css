@@ -201,3 +201,11 @@ body{
     bottom: 6px;
     left: 0%;
 }
+.aboveBar{
+    display: flex;
+    justify-content: space-between;
+}
+.songInfo, .songTime{
+    color: rgb(0, 0, 0);
+    padding: 0 12px;
+}
