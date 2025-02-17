@@ -13,6 +13,9 @@
 <body>
     <div class="container flex bg-black">
         <div class="left">
+            <div class="close">
+                <img class="invert closeImg" src="cross.svg" alt="">
+            </div>
             <div class="home bg-grey rounded m-1 p-1">
                 <div class="logo">
                     <img class="invert" src="logo.svg" alt="logo">
@@ -30,7 +33,8 @@
                 <div class="songList">
                     <ul>
                         <li>
-                            <img class=" songListImg" src="https://i.scdn.co/image/ab67616d00001e02d304ba2d71de306812eebaf4" alt="">
+                            <img class=" songListImg"
+                                src="https://i.scdn.co/image/ab67616d00001e02d304ba2d71de306812eebaf4" alt="">
                             <div class="info">
                                 <div>Song Name</div>
                                 <div>Song Artist</div>
@@ -40,7 +44,7 @@
                                 <span>Play now</span>
                                 <img class="invert size25" src="playPlaybar.svg" alt="">
                             </div>
-                            
+
                         </li>
                     </ul>
                 </div>
@@ -58,8 +62,13 @@
         <div class="right bg-grey rounded ">
             <div class="header">
                 <div class="nav">
-                    <img class="invert" src="back.svg" alt="">
-                    <img class="invert" src="next.svg" alt="">
+
+                    <div class="hamburgerContainer">
+                        <img class="invert hamburger" src="hamburger.svg" alt="">
+                        <img class="invert" src="back.svg" alt="">
+                        <img class="invert" src="next.svg" alt="">
+                    </div>
+
                 </div>
                 <div class="buttons">
                     <button class="btn loginBtn">
@@ -91,7 +100,7 @@
                         <h3>Top Global</h3>
                         <p>Top 50 global songs from around the world</p>
                     </div>
-                    
+
                 </div>
             </div>
             <div class="playbar">
@@ -101,13 +110,21 @@
                 <div class="aboveBar">
                     <div class="songInfo">INFO</div>
                     <div class="songButtons">
-                    <img id="previous" src="prevSong.svg" alt="">
-                    <img id="play" src="playPlaybar.svg" alt="">
-                    <img id="next" src="nextSong.svg" alt="">
+                        <img id="previous" src="prevSong.svg" alt="">
+                        <img id="play" src="playPlaybar.svg" alt="">
+                        <img id="next" src="nextSong.svg" alt="">
+                    </div>
+                    <div class="songTimeVolume">
+                        <div class="songTime">00:00:00</div>
+                        <div class="volume">
+                            <img src="volume.svg" alt="">
+                            <div class="range"><input type="range" name="" id=""></div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
-                <div class="songTime">00:00:00</div>
-                </div>
-                
+
             </div>
         </div>
     </div>
